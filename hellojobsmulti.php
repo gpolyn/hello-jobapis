@@ -1,5 +1,6 @@
 <?php
 require 'vendor/autoload.php';
+date_default_timezone_set('America/New_York');
 
 // the following is adapted from v1.1 github.com/jobapis/jobs-multi/blob/master/README.md
 
@@ -27,6 +28,7 @@ $client->setKeyword('training')
 
 // Make queries to each individually
 $indeedJobs = $client->getJobsByProvider('Indeed');
+echo print_r($indeedJobs);
 
 // And include an array of options if you'd like
 $options = [
@@ -36,6 +38,8 @@ $options = [
     'order' => 'desc',           // Order ('asc' or 'desc')
 ];
 $diceJobs = $client->getJobsByProvider('Dice', $options);
+echo print_r($diceJobs);
 
 // Or get an array with results from all the providers at once
 $jobs = $client->getAllJobs($options);
+echo print_r($jobs);
