@@ -17,7 +17,7 @@ $providers = [
 ];
 
 // Instantiate a new JobsMulti client
-$client = new JobsMulti($providers);
+$client = new \JobApis\Jobs\Client\JobsMulti($providers);
 
 // Set the parameters: Keyword, Location, Page
 $client->setKeyword('training')
