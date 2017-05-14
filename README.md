@@ -4,7 +4,7 @@ Attempt to succeed with jobapis jobs-multi php package per the script given on t
 
 Error message after `php hellojobsmulti.php`:
 
-`Fatal error: Class 'JobsMulti' not found in //hello-jobapis/hellojobsmulti.php on line 20`
+`Fatal error: Class 'JobsMulti' not found in /(snip!)/hello-jobapis/hellojobsmulti.php on line 20`
 
 <h2>System info</h2>
 
